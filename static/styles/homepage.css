@@ -1,0 +1,20 @@
+body {
+  background-color: #6A6A6D ;
+}
+
+h1 {
+    color: antiquewhite;
+    text-align: center;
+}
+
+form{
+    color: #FF7F50;
+    align-self: center;
+    
+}
+
+input{
+    padding: 8;
+    margin: 8;
+}
+

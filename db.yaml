@@ -1,0 +1,5 @@
+mysql_host: 'localhost'
+mysql_user: 'nikhil'
+# Enter your password in field below
+mysql_password: 'Nikhil*123'
+mysql_db: 'ime_medical_department'

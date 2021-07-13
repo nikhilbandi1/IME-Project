@@ -1,0 +1,17 @@
+SQL QUERIES
+------------
+
+CREATE DATABASE
+----------------
+CREATE DATABASE MateRate;
+USE MateRate;
+
+REFRESH DATABASE
+-----------------
+DROP TABLE SPORTS;
+CREATE TABLE SPORTS (id smallint unsigned not null auto_increment,name text,favsport text, primary key(id));
+DESCRIBE SPORTS;
+INSERT into SPORTS(name,favsport) values("SampleName","Sample");
+SELECT * FROM  SPORTS;
+DELETE FROM SPORTS WHERE favsport="Sample";
+SELECT * FROM  SPORTS;
