@@ -14,9 +14,9 @@ from flask_mysqldb import MySQL
 import yaml
 import pickle
 import docx
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
+# nltk.download('punkt')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
 from docx import Document
 import pandas as pd
 import string
@@ -25,7 +25,7 @@ import pickle
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
-from nltk.corpus import stopwords
+# from nltk.corpus import stopwords
 
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from gensim import models
