@@ -40,12 +40,12 @@ app = Flask(__name__)
 
 
 # Configure db
-db = yaml.safe_load(open('db.yaml'))
-app.config['MYSQL_HOST'] = db['mysql_host']
-app.config['MYSQL_USER'] = db['mysql_user']
-app.config['MYSQL_PASSWORD'] = db['mysql_password']
-app.config['MYSQL_DB'] = db['mysql_db']
-app.config['MYSQL_CUSRSORCLASS'] = 'DictCursor'
+# db = yaml.safe_load(open('db.yaml'))
+# app.config['MYSQL_HOST'] = db['mysql_host']
+# app.config['MYSQL_USER'] = db['mysql_user']
+# app.config['MYSQL_PASSWORD'] = db['mysql_password']
+# app.config['MYSQL_DB'] = db['mysql_db']
+# app.config['MYSQL_CUSRSORCLASS'] = 'DictCursor'
 
 # app.config['MYSQL_HOST'] = 'localhost'
 # app.config['MYSQL_USER'] = 'nikhil'
@@ -75,13 +75,13 @@ def predict():
 		name = userDetails['name']
 		email = userDetails['email']
 		dd = userDetails['dd']
-		cur = mysql.connection.cursor()
-		cur.execute('''CREATE TABLE IF NOT EXISTS ime_medical_department.test_data(id smallint unsigned not null auto_increment, name text , email text,dd text,primary key(id));''')
+		#cur = mysql.connection.cursor()
+		#cur.execute('''CREATE TABLE IF NOT EXISTS ime_medical_department.test_data(id smallint unsigned not null auto_increment, name text , email text,dd text,primary key(id));''')
 		# query = '"INSERT INTO ime_medical_department.tesdt_data(name, email,dd) VALUES (" + name +","  +  email + "," + dd + ");"'
-		cur.execute("INSERT INTO test_data(name, email,dd) VALUES (%s,%s,%s) ",(name, email,dd))
+		#cur.execute("INSERT INTO test_data(name, email,dd) VALUES (%s,%s,%s) ",(name, email,dd))
 		# cur.execute(query);
-		mysql.connection.commit()
-		cur.close()
+		#mysql.connection.commit()
+		#cur.close()
 
 	return render_template('index.html', prediction_text='You should go the Department of {}'.format(output[0][0]))
  
