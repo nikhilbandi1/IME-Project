@@ -52,7 +52,7 @@ app = Flask(__name__)
 # app.config['MYSQL_PASSWORD'] = 'Nikhil*123'
 # app.config['MYSQL_DB'] = 'ime_medical_department'
 # app.config['MYSQL_CUSRSORCLASS'] = 'DictCursor'
-mysql = MySQL(app)
+#mysql = MySQL(app)
 
 filename = ('test_doc2vec_5deppt.model')
 model= Doc2Vec.load(filename)
