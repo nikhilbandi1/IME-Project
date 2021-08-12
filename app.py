@@ -14,7 +14,9 @@ from flask_mysqldb import MySQL
 import yaml
 import pickle
 import docx
-
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 from docx import Document
 import pandas as pd
 import string
