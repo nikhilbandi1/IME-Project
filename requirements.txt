@@ -17,6 +17,7 @@ google-auth-oauthlib==0.4.4
 google-spreadsheet==0.0.6
 googleapis-common-protos==1.53.0
 greenlet==1.1.0
+gunicorn
 httplib2==0.19.1
 idna==3.2
 importlib-metadata==4.6.1
