@@ -56,7 +56,8 @@ app = Flask(__name__)
 # app.config['MYSQL_CUSRSORCLASS'] = 'DictCursor'
 #mysql = MySQL(app)
 
-filename = ('test_doc2vec_5deppt.model')
+# filename = ('test_doc2vec_5deppt.model')
+filename = ('final_doc2vec_excel_data.model')
 model= Doc2Vec.load(filename)
 
 
