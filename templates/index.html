@@ -17,19 +17,21 @@
 </head>
 
 <body>
-
+<br>
+    <h1>AIIMS Medical Department Identifier</h1>
+    <br>
 <div class="container">
 <form action="{{ url_for('predict')}}"method="post">
 <div class="form-group">
-Name: <input type="text" name="name" required>
+    <b>Name:</b> <input type="text" name="name" required>
 </div>    
 <br>
 <div class="form-group">
-    E-mail: <input type="text" name="email" required>
+    <b>E-mail:</b> <input type="text" name="email" required>
     </div>
     <br>
     <div class="form-group">
-Disease Description(like name, symptoms etc): <input type="text" name="dd" required>
+        <b>Disease Description(like name, symptoms etc):</b> <input type="text" name="dd" required>
     </div>
         <br>
 <input type="submit">
@@ -38,8 +40,5 @@ Disease Description(like name, symptoms etc): <input type="text" name="dd" requi
 </div>
 <br>
 <br>
-
-
-
 </body>
 </html>
