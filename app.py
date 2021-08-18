@@ -85,7 +85,7 @@ def predict():
 		#mysql.connection.commit()
 		#cur.close()
 
-	return render_template('index.html', prediction_text='You should go to the Department of {}'.format(output[0][0]))
+	return render_template('index.html', prediction_text='You should go to the department of {}'.format(output[0][0]))
  
 
 if __name__ == '__main__':
